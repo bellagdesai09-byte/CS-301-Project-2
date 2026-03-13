@@ -44,7 +44,7 @@ int count;
 
 public:
 ActivityLogLinked();
-~ActivitylogLinked();
+~ActivityLogLinked();
 void receiveSample(Activity s);
 Activity processSample();
 Activity nextInLine();

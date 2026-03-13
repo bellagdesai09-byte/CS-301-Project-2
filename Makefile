@@ -18,6 +18,8 @@ TARGET = project2
 # NOTE: Lines must end with a backslash (\) except the last line.
 # ------------------------------------------------------------
 SRCS = $(SRC_DIR)/driver.cpp \
+       $(SRC_DIR)/ActivityLogArray.cpp \
+       $(SRC_DIR)/ActivityLogLinked.cpp
 
 # Object files (in build directory)
 OBJS = $(SRCS:$(SRC_DIR)/%.cpp=$(BUILD_DIR)/%.o)
