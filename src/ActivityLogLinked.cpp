@@ -1,4 +1,4 @@
-#include "Activity.h"
+#include "ActivityLog.h"
 void ActivityLogLinked::receiveSample(Activity s) {
     //1. create a new "carrier" (node)
     Node* newNode= new Node;

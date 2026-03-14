@@ -20,7 +20,7 @@ To ensure the ADT remains stable, the following invariants are enforced across b
 
 * Size Tracking: A count variable is updated during every receive and process operation. This ensure sampleCount() is an O(1) operation rather than O(n).
 
-* Ordering: In the array version, the front and back are managed by the modulo operator so nothing can "creep" out of bounds. In the linked version, the backPtr is strictly updated only during additions to maintain the chain.
+* Ordering: In the array version, the front and back are managed by the modulo operator so nothing can "creep" out of bounds. In the linked version, the backPtr is strictly updated only during additions to maintain the chain. //https://www.geeksforgeeks.org/cpp/modulo-operator-in-c-cpp-with-examples/
 
 * Empty Handling: Both implementations return a specialized Activity record with a sampleID of -1 when a process is attempted on an empty log, this prevents program crashes.
 
